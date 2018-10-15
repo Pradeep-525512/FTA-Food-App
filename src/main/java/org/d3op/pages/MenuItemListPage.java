@@ -31,8 +31,7 @@ public class MenuItemListPage implements Page {
     }
 
     public void launch() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        this.driver = new ChromeDriver();
+        this.driver = new FirefoxDriver();
         driver.navigate().to("http://localhost:4200/view-list");
     }
 
